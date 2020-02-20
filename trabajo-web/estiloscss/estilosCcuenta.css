@@ -1,0 +1,34 @@
+
+body{
+	background:#DCDCDC;
+}
+
+article{
+	
+
+	background-color: #ffffff;
+
+	border: 1px solid #bfd8eb;
+	border-radius: 8px;
+	
+	
+	width:800px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	
+}
+
+
+.ibody{
+	background-color: #ffffff;
+	border: 1px solid #bfd8eb;
+	border-radius: 8px;
+	height:600px;
+	
+	width:800px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+.cuenta{
+	padding:14px;
+}

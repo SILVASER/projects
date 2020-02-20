@@ -1,0 +1,214 @@
+	<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Nuestro Sitio Web</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="estiloscss/estiloscrud.css">
+
+	
+
+</head>
+<body>
+
+<header>
+<div class="fixed-top container row">
+
+	<div class="col-xs-8 col-sm-8 col-md-8">
+		<h1 align="center"><strong>TiendaOnline.com<br><small>A tu Servicio</small></strong></h1>
+	</div>
+
+	<div class="hidden-xs hidden-sm col-md-4">
+		<img src="Imagenes/imagenesblog/11.png" height="120px" width="390px">
+
+	</div> 
+	
+</div>
+</header>
+
+
+
+
+<div class="container fcrud">
+
+<h1>Registro de Usuarios</h1>
+<hr>
+
+
+
+
+<br>
+	<a class="btn  btn-success" href="#login"  data-toggle="modal"><span class="glyphicon glyphicon-import"></span> Agregar Registro</a>
+
+
+					
+						<div class="container">
+							<div class="modal fade" id="login">
+								<div class="modal-dialog">
+									<div class="modal-content">
+									<!--header de la ventana-->
+										<div class="modal-header color5">
+											<button tyle="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+											<h1 class="modal-title">Registros de Usuarios</h1>
+																								
+										</div>
+
+									<!--Contenido de la ventana-->
+
+						
+																	
+										<div class="jumbotron boxlogin">
+											<div class="container">
+
+										
+											
+				<form class="form-horizontal" method="POST" >
+
+				
+					<br>
+					<div class="form-group">
+						<label class="control-label col-md-3">Id:</label>
+						<div class="col-md-9">
+							<input type="text" name="email" id="email" placeholder="Email" class="form-control">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-md-3">Nombre:</label>
+						<div class="col-md-9">
+							<input type="text" name="password" id="password" placeholder="Password" class="form-control">
+						</div>
+					</div>	
+
+					<div class="form-group">
+						<label class="control-label col-md-3">Email:</label>
+						<div class="col-md-9">
+						
+							<input type="text" name="cpassword" id="cpassword" placeholder="Confirmar Password" class="form-control">
+						</div>
+					</div>	
+
+					<div class="form-group">
+						<label class="control-label col-md-3">Telefono:</label>
+						<div class="col-md-9">
+							<input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control">
+						</div>
+					</div>
+
+
+					<div class="form-group">
+						<label class="control-label col-md-3">Dirección:</label>
+						<div class="col-md-9">
+							<input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control">
+						</div>
+					</div>
+					
+							<br><br>
+								
+								<div class="form-group">
+								<label class="control-label col-md-3"></label>
+								<div class="col-md-9">
+									<button class="btn btn-primary"><span class="glyphicon glyphicon-floppy-open"></span> Agregar Usuario</button>
+									<button class="btn btn-success"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
+								
+								</div>
+								</div>
+				</form>
+		
+											</div>
+										</div>						
+
+									</div>			
+								</div>		
+							</div>
+						</div>	
+<br><br><br><br>
+
+
+	
+		
+	
+	
+
+	<div class="form-group">
+
+				<div class="input-group col-md-4">
+					<span class="input-group-addon"><span class="glyphicon glyphicon-search" ></span></span>
+					<input type="text" name="name" id="name" placeholder="Buscar Usuario:" class="form-control">
+				</div>		
+	</div>
+	
+
+
+<div class="">
+
+
+			<div class="table-responsive">
+
+				<table class="table table-hover table-bordered">
+					<tr class="danger">
+						<th>#ID</th>
+						<th>NOMBRE USUARIO</th>
+						<th>EMAIL</th>
+						<th>TELEFONO</th>
+						<th>NOMBRE</th>
+						<th>ACCIÓN</th>
+						
+					</tr>
+
+					<?php
+						$no = 0;
+						$sql = mysql_query("SELECT * FROM tusuarios");
+						while ($tampil = mysql_fecha_array($sql)){
+							$no++;
+
+							?>
+								<tr>
+									<td><?php echo $no ?></td>
+									<td><?php echo $tampil ?></td>
+									<td><?php echo $tampil ?></td>
+									<td><?php echo $tampil ?></td>
+									<td><?php echo $tampil ?></td>
+								</tr>
+							<?php
+
+						}
+					?>
+
+
+				</table>
+
+
+
+			</div>
+			<a class="btn btn-success" href="Index.html"><span class="glyphicon glyphicon-circle-arrow-left"></span> volver</a>
+			<br><br><br>
+
+		</div>
+
+
+		<?php
+			include "db.php";
+			switch ($_GET['page']) {
+				case 'db':
+					# code...
+					include "db.php";
+					break;
+				
+				default:
+					# code...
+					include "db.php";
+					break;
+			}
+		?>
+		
+</div>		
+
+
+
+	<script src="./js/jquery.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+</body>
+</html
