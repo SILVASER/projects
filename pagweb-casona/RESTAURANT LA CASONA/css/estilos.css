@@ -1,0 +1,93 @@
+/*===== contenedor generar =====*/
+#contenedor {
+    width: 1135px;
+    overflow: hidden;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+    cursor: pointer;
+}
+/*==== posiciones de las flechas ===*/
+#contenedor  .izquierda_flecha {
+    position: absolute;
+    left: 10px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -50px;
+}
+#contenedor  .derecha_flecha {
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -50px;
+}
+/*==== contenedor de todos los div de las imagenes ====*/
+.carrusel2 {
+    width: 4000px;
+    left: 0px;
+    position: absolute;
+    z-index: 0;
+    animation: movimiento 15s infinite;
+}
+
+@keyframes movimiento{
+    0%{left: 1px;}
+    25%  {left: -150px;}
+    50%  {left: -180px}
+    100% {left:-50px;}
+	   /* 0%{left: 7px;}
+    /* 28%  {left: -128px;}*/
+   /* 50%  {left: -97px;}
+    100% {left: 50px;}*/
+
+}
+
+
+/*==== div.. contenedor de cada imagen ==*/
+.carrusel2 > div {
+    float: left;
+   /* width: 185px;
+    height: 120px; */
+	width: 150px;
+    height: 100px;
+    text-align: center;
+
+}
+.carrusel2 .img_carrusel {
+    cursor: pointer;
+}
+.imagen {
+    border: #FFB612 1px solid ;
+}
+/*====== ajustar medida a telefono====*/
+@media screen and (max-width: 860px){
+
+    #carrusel1{
+        width: 100%;
+    }
+}
+
+.carrusel2:hover {
+    animation-play-state: paused;
+}
+.carrusel2 > div  img{
+    transition:transform 1s ease-out;
+    /*    display:block!important;
+        -webkit-transition:-webkit-transform 1s ease-out;
+        -moz-transition:-moz-transform 1s ease-out;
+        -o-transition:-o-transform 1s ease-out;
+        -ms-transition:-ms-transform 1s ease-out;*/
+}
+
+.carrusel2 > div :hover{
+    transition:transform 1s ease-out;
+    transform: scale(1.2);
+    /* -moz-transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+     -o-transform: scale(1.1);
+     -ms-transform: scale(1.1);      */
+}
+
+
+
