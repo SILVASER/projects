@@ -1,0 +1,939 @@
+/****************************** PRODUCTOS MEGA***************************************/
+#contenedorM {
+    width: 1300px;
+    overflow: hidden;
+    height: 353px;
+    position: relative;
+    margin: 0 auto;
+    cursor: pointer;
+    max-width: 100%;
+}
+/*==== posiciones de las flechas ===*/
+#contenedorM  .izquierda_flechaM {
+    position: absolute;
+    left: 15px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -50px;
+}
+#contenedorM  .derecha_flechaM {
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -50px;
+}
+
+/*==== contenedor de todos los div de las imagenes ====*/
+.carruselM {
+    width: 5000px;
+    left: 0px;
+    position: absolute;
+    z-index: 0;
+   /* animation: movimiento 15s infinite;*/
+}
+
+/*==== div.. contenedor de cada imagen ==*/
+.carruselM > div {
+    float: left;
+    width: 302px;
+    height: 275px; 
+    text-align: center;
+    margin:13px;
+    padding: 6px;
+   border-radius: 5px 5px 5px 5px;
+}
+.carruselM .img_carrusel {
+    cursor: pointer;
+}
+.imagen {
+      border: #4285F4 5px solid ; 
+}
+/*====== ajustar medida a telefono====*/
+@media screen and (max-width: 860px){
+
+    #contenedorM{width: 100%;}
+}
+
+.carruselM:hover {
+    animation-play-state: paused;
+}
+.carruselM > div  img{
+    transition:transform 1s ease-out;
+    /*    display:block!important;
+        -webkit-transition:-webkit-transform 1s ease-out;
+        -moz-transition:-moz-transform 1s ease-out;
+        -o-transition:-o-transform 1s ease-out;
+        -ms-transition:-ms-transform 1s ease-out;*/
+}
+
+.carruselM > div :hover{
+    transition:transform 1s ease-out;
+    transform: scale(1.05);
+    /* -moz-transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+     -o-transform: scale(1.1);
+     -ms-transform: scale(1.1);      */
+}
+/*resoluciones de pantalla*/
+
+@media screen and (max-width:320px){
+     #contenedorM  .derecha_flechaM {display: none;}
+     #contenedorM  .izquierda_flechaM {display: none; }
+     .carruselM {animation: movimiento 15s infinite;}
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+}
+    @media screen and (max-width:480px){
+        #contenedorM  .derecha_flechaM {display: none;}
+        #contenedorM  .izquierda_flechaM {display: none; }
+        .carruselM {animation: movimiento 15s infinite;}
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+    }
+
+    @media screen and (max-width:768px){
+        #contenedorM  .derecha_flechaM {display: none;}
+        #contenedorM  .izquierda_flechaM {display: none; }
+        .carruselM {animation: movimiento 15s infinite;}
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+    }
+
+    @media screen and (max-width:1024px){
+        #contenedorM  .derecha_flechaM {display: none;}
+        #contenedorM  .izquierda_flechaM {display: none; }
+        .carruselM {animation: movimiento 15s infinite;}
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+    }
+
+    @media screen and (max-width:768px){
+         
+        #contenedorM  .derecha_flechaM {display: none;}
+        #contenedorM  .izquierda_flechaM {display: none;}
+        .carruselM {animation: movimiento 15s infinite;}
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+    }
+
+
+
+
+/************************************MEJORES PRODUCTOS*****************************************************/
+#contenedor {
+    width: 1300px;
+    overflow: hidden;
+    height: 353px;
+    position: relative;
+    margin: 0 auto;
+    cursor: pointer;
+    max-width: 100%;
+}
+/*==== posiciones de las flechas ===*/
+#contenedor  .izquierda_flecha {
+    position: absolute;
+    left: 15px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -50px;
+}
+#contenedor  .derecha_flecha {
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -50px;
+}
+
+/*==== contenedor de todos los div de las imagenes ====*/
+.carrusel2 {
+    width: 5000px;
+    left: 0px;
+    position: absolute;
+    z-index: 0;
+   /* animation: movimiento 15s infinite;*/
+}
+
+/*==== div.. contenedor de cada imagen ==*/
+.carrusel2 > div {
+    float: left;
+    width: 302px;
+    height: 275px; 
+    text-align: center;
+    margin:13px;
+    padding: 8px;
+   border-radius: 5px 5px 5px 5px;
+}
+.carrusel2 .img_carrusel {
+    cursor: pointer;
+}
+.imagen {
+      border: #4285F4 1px solid ; 
+}
+/*====== ajustar medida a telefono====*/
+@media screen and (max-width: 860px){
+
+    #contenedor{width: 100%;}
+}
+
+.carrusel2:hover {
+    animation-play-state: paused;
+}
+.carrusel2 > div  img{
+    transition:transform 1s ease-out;
+    /*    display:block!important;
+        -webkit-transition:-webkit-transform 1s ease-out;
+        -moz-transition:-moz-transform 1s ease-out;
+        -o-transition:-o-transform 1s ease-out;
+        -ms-transition:-ms-transform 1s ease-out;*/
+}
+
+.carrusel2 > div :hover{
+    transition:transform 1s ease-out;
+    transform: scale(1.05);
+    /* -moz-transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+     -o-transform: scale(1.1);
+     -ms-transform: scale(1.1);      */
+}
+/*resoluciones de pantalla*/
+
+@media screen and (max-width:320px){
+     #contenedor  .derecha_flecha {display: none;}
+     #contenedor  .izquierda_flecha {display: none; }
+     .carrusel2 {animation: movimiento 15s infinite;}
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+}
+    @media screen and (max-width:480px){
+        #contenedor  .derecha_flecha {display: none;}
+        #contenedor  .izquierda_flecha {display: none; }
+        .carrusel2 {animation: movimiento 15s infinite;}
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+    }
+
+    @media screen and (max-width:768px){
+        #contenedor  .derecha_flecha {display: none;}
+        #contenedor  .izquierda_flecha {display: none; }
+        .carrusel2 {animation: movimiento 15s infinite;}
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+    }
+
+    @media screen and (max-width:1024px){
+        #contenedor  .derecha_flecha {display: none;}
+        #contenedor  .izquierda_flecha {display: none; }
+        .carrusel2 {animation: movimiento 15s infinite;}
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+    }
+
+    @media screen and (max-width:768px){
+         
+        #contenedor  .derecha_flecha {display: none;}
+        #contenedor  .izquierda_flecha {display: none;}
+        .carrusel2 {animation: movimiento 15s infinite;}
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+    }
+
+/*********************************************2********************************************************************/
+#contenedor1 {
+    width: 1300px;
+    overflow: hidden;
+    height: 300px;/*280*/
+    position: relative;
+    margin: 0px auto;
+    cursor: pointer;
+    max-width: 100%;
+}
+/*==== posiciones de las flechas ===*/
+#contenedor1  .izquierda_flecha1 {
+    position: absolute;
+    left: 15px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -50px;
+}
+#contenedor1  .derecha_flecha1 {
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -50px;
+}
+
+/*==== contenedor de todos los div de las imagenes ====*/
+.carrusel21 {
+    width: 5000px;
+    left: 0px;
+    position: absolute;
+    z-index: 0;
+   /* animation: movimiento 15s infinite;*/
+}
+
+/*==== div.. contenedor de cada imagen ==*/
+.carrusel21 > div {
+    float: left;
+    width: 302px;
+    height: 275px; 
+    text-align: center;
+    margin:13px;
+    padding: 8px;
+    border-radius: 5px 5px 5px 5px;
+
+}
+.carrusel21 .img_carrusel1 {
+    cursor: pointer;
+}
+
+/*====== ajustar medida a telefono====*/
+@media screen and (max-width: 860px){
+
+    #contenedor1{
+     width: 100%;
+
+    }
+}
+
+.carrusel21 > div  img{
+    transition:transform 1s ease-out;
+}
+
+.carrusel21 > div :hover{
+    transition:transform 1s ease-out;
+    transform: scale(1.05);
+}
+
+/*resoluciones de pantalla*/
+
+@media screen and (max-width:320px){
+   #contenedor1  .derecha_flecha1 {display: none;}
+ #contenedor1  .izquierda_flecha1 {display: none; }
+
+}
+    @media screen and (max-width:480px){
+        #contenedor1  .derecha_flecha1 {display: none;}
+        #contenedor1  .izquierda_flecha1 {display: none; }
+         .carrusel21 {animation: movimiento 15s infinite;}
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+    }
+
+    @media screen and (max-width:768px){
+        #contenedor1  .derecha_flecha1 {display: none;}
+        #contenedor1  .izquierda_flecha1 {display: none; }
+        .carrusel21 {animation: movimiento 15s infinite;}
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+    }
+
+    @media screen and (max-width:1024px){
+        #contenedor1  .derecha_flecha1 {display: none;}
+        #contenedor1  .izquierda_flecha1 {display: none; }
+         .carrusel21 {animation: movimiento 15s infinite;}
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+    }
+
+    @media screen and (max-width:768px){
+         #contenedor1  .derecha_flecha1 {display: none;}
+        #contenedor1 .izquierda_flecha1 {display: none; }
+         .carrusel21 {animation: movimiento 15s infinite;}
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+    }
+/************************************************3*******************************************************************************/
+#contenedor3 {
+    width: 1300px;
+    overflow: hidden;
+    height: 353px;
+    position: relative;
+    margin: 0 auto;
+    cursor: pointer;
+    max-width: 100%;
+
+}
+/*==== posiciones de las flechas ===*/
+
+#contenedor3  .izquierda_flecha3 {
+    position: absolute;
+    left: 15px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -50px;
+}
+#contenedor3  .derecha_flecha3 {
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -50px;
+}
+/*==== contenedor de todos los div de las imagenes ====*/
+.carrusel3 {
+    width: 5000px;
+    left: 0px;
+    position: absolute;
+    z-index: 0;
+   /* animation: movimiento 15s infinite;*/
+}
+
+/*==== div.. contenedor de cada imagen ==*/
+.carrusel3 > div {
+    float: left;
+    width: 302px;
+    height: 275px; 
+    text-align: center;
+    margin:13px;
+    padding: 8px;
+    border-radius: 5px 5px 5px 5px;
+}
+.carrusel3 .img_carrusel3 {
+    cursor: pointer;
+}
+.imagen3 {
+      border: #4285F4 1px solid ; 
+}
+/*====== ajustar medida a telefono====*/
+@media screen and (max-width: 860px){
+
+    #contenedor3{
+     width: 100%;
+ }
+}
+
+.carrusel3 > div  img{
+    transition:transform 1s ease-out;
+}
+
+.carrusel3 > div :hover{
+    transition:transform 1s ease-out;
+    transform: scale(1.05);
+}
+
+/*resoluciones de pantalla*/
+
+@media screen and (max-width:320px){
+   #contenedor3  .derecha_flecha3 {display: none;}
+ #contenedor3  .izquierda_flecha3 {display: none; }
+  .carrusel3 {animation: movimiento 15s infinite;}
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+
+}
+    @media screen and (max-width:480px){
+        #contenedor3  .derecha_flecha3 {display: none;}
+        #contenedor3  .izquierda_flecha3 {display: none; }
+         .carrusel3 {animation: movimiento 15s infinite;}
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+    }
+
+    @media screen and (max-width:768px){
+        #contenedor3  .derecha_flecha3 {display: none;}
+        #contenedor3  .izquierda_flecha3 {display: none; }
+         .carrusel {animation: movimiento 15s infinite;}
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+    }
+
+    @media screen and (max-width:1024px){
+        #contenedor3  .derecha_flecha3 {display: none;}
+        #contenedor3  .izquierda_flecha3 {display: none; }
+         .carrusel3 {animation: movimiento 15s infinite;}
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+    }
+
+    @media screen and (max-width:768px){
+         #contenedor3  .derecha_flecha3 {display: none;}
+        #contenedor3  .izquierda_flecha3 {display: none; }
+         .carrusel3 {animation: movimiento 15s infinite;}
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+    }
+/*********************************************4************************************************************/
+#contenedor4 {
+    width: 1300px;
+    overflow: hidden;
+    height: 353px;
+    position: relative;
+    margin: 0 auto;
+    cursor: pointer;
+    max-width: 100%;
+
+}
+/*==== posiciones de las flechas ===*/
+
+#contenedor4  .izquierda_flecha4 {
+    position: absolute;
+    left: 15px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -50px;
+}
+#contenedor4  .derecha_flecha4 {
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -50px;
+}
+/*==== contenedor de todos los div de las imagenes ====*/
+.carrusel4 {
+    width: 5000px;
+    left: 0px;
+    position: absolute;
+    z-index: 0;
+   /* animation: movimiento 15s infinite;*/
+}
+
+/*==== div.. contenedor de cada imagen ==*/
+.carrusel4 > div {
+    float: left;
+    width: 302px;
+    height: 275px; 
+    text-align: center;
+    margin:13px;
+    padding: 8px;
+    border-radius: 5px 5px 5px 5px;
+}
+.carrusel4 .img_carrusel4 {
+    cursor: pointer;
+}
+.imagen4{
+      border: #4285F4 1px solid ; 
+}
+   
+
+/*====== ajustar medida a telefono====*/
+@media screen and (max-width: 860px){
+
+    #contenedor4{
+     width: 100%;
+ }
+}
+
+.carrusel4 > div  img{
+    transition:transform 1s ease-out;
+}
+
+.carrusel4 > div :hover{
+    transition:transform 1s ease-out;
+    transform: scale(1.05);
+}
+
+/*resoluciones de pantalla*/
+
+@media screen and (max-width:320px){
+   #contenedor4  .derecha_flecha4 {display: none;}
+ #contenedor4  .izquierda_flecha4 {display: none; }
+  .carrusel4 {animation: movimiento 15s infinite;}
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+
+}
+    @media screen and (max-width:480px){
+        #contenedor4  .derecha_flecha4 {display: none;}
+        #contenedor4  .izquierda_flecha4 {display: none; }
+         .carrusel4 {animation: movimiento 15s infinite;}
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+    }
+
+    @media screen and (max-width:768px){
+        #contenedor4  .derecha_flecha4 {display: none;}
+        #contenedor4  .izquierda_flecha4 {display: none; }
+         .carrusel4 {animation: movimiento 15s infinite;}
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+    }
+
+    @media screen and (max-width:1024px){
+        #contenedor4  .derecha_flecha4 {display: none;}
+        #contenedor4  .izquierda_flecha4 {display: none; }
+         .carrusel4 {animation: movimiento 15s infinite;}
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+    }
+
+    @media screen and (max-width:768px){
+         #contenedor4  .derecha_flecha4 {display: none;}
+        #contenedor4  .izquierda_flecha4 {display: none; }
+         .carrusel4 {animation: movimiento 15s infinite;}
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+    }
+
+    /*************************************** slider ofertas ******************************************************/
+
+#contenedoro {
+    width: 1266px;
+    overflow: hidden;
+    height: 485px;
+    position: relative;
+    margin: 0 auto;
+    cursor: pointer;
+    max-width: 100%;
+    margin-top: -45px;
+    margin-left: 30px;
+}
+/*==== posiciones de las flechas ===*/
+#contenedoro  .izquierda_flechao {
+    position: absolute;
+    left: 15px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -50px;
+}
+#contenedoro  .derecha_flechao {
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -50px;
+}
+
+/*==== contenedor de todos los div de las imagenes ====*/
+.carruselo {
+    width: 5000px;
+    left: 0px;
+    position: absolute;
+    z-index: 0;
+
+   /* animation: movimiento 15s infinite;*/
+}
+
+/*==== div.. contenedor de cada imagen ==*/
+.carruselo > div {
+    float: left;
+    width: 1200px;
+    height: 485px; 
+    text-align: center;
+    margin:25px;
+    padding: 8px;
+
+}
+.carruselo .img_carrusel {
+    cursor: pointer;
+}
+
+/*====== ajustar medida a telefono====*/
+@media screen and (max-width: 860px){
+
+    #contenedoro{width: 100%;}
+}
+
+.carruselo:hover {
+    animation-play-state: paused;
+}
+.carruselo > div  img{
+    transition:transform 1s ease-out;
+    /*    display:block!important;
+        -webkit-transition:-webkit-transform 1s ease-out;
+        -moz-transition:-moz-transform 1s ease-out;
+        -o-transition:-o-transform 1s ease-out;
+        -ms-transition:-ms-transform 1s ease-out;*/
+}
+
+.carruselo > div :hover{
+    transition:transform 1s ease-out;
+    transform: scale(1.05);
+    /* -moz-transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+     -o-transform: scale(1.1);
+     -ms-transform: scale(1.1);      */
+}
+/*resoluciones de pantalla*/
+
+@media screen and (max-width:320px){
+.slider_ofertas{
+  height: 120vh;
+}
+     #contenedoro  .derecha_flechao {display: none;}
+     #contenedoro  .izquierda_flechao {display: none; }
+     .carruselo {animation: movimiento 15s infinite;}
+
+      #contenedoro  div img {width:284px; height:255px;}
+      /************************************************/
+ #contenedoro {
+    width: 1300px; 
+    height: 353px;
+    max-width: 100%;
+}
+/*==== contenedor de todos los div de las imagenes ====*/
+.carruselo {
+    width: 5000px;
+   }
+/*==== div.. contenedor de cada imagen ==*/
+.carruselo > div {
+    width: 302px;
+    height: 340px; 
+}
+      /*******************************************/
+
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+}
+    @media screen and (max-width:480px){
+      .slider_ofertas{
+  height: 140vh;
+}
+        #contenedoro  .derecha_flechao {display: none;}
+        #contenedoro  .izquierda_flechao {display: none; }
+        .carrusel2 {animation: movimiento 15s infinite;}
+    
+      #contenedoro  div img {width:284px; height:255px;}
+      /************************************************/
+ #contenedoro {
+    width: 1300px; 
+    height: 353px;
+    max-width: 100%;
+}
+/*==== contenedor de todos los div de las imagenes ====*/
+.carruselo {
+    width: 5000px;
+   }
+/*==== div.. contenedor de cada imagen ==*/
+.carruselo > div {
+    width: 302px;
+    height: 340px; 
+}
+      /*******************************************/
+
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+    }
+
+    @media screen and (max-width:768px){
+        #contenedoro  .derecha_flechao {display: none;}
+        #contenedoro  .izquierda_flechao {display: none; }
+        .carruselo {animation: movimiento 15s infinite;}
+      #contenedoro  div img {width:284px; height:255px;}
+      /************************************************/
+ #contenedoro {
+    width: 1300px; 
+    height: 353px;
+    max-width: 100%;
+}
+/*==== contenedor de todos los div de las imagenes ====*/
+.carruselo {
+    width: 5000px;
+   }
+/*==== div.. contenedor de cada imagen ==*/
+.carruselo > div {
+    width: 302px;
+    height: 340px; 
+}
+      /*******************************************/
+
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+    }
+
+    @media screen and (max-width:1024px){
+        #contenedoro  .derecha_flechao {display: none;}
+        #contenedoro  .izquierda_flechao {display: none; }
+        .carrusel2 {animation: movimiento 15s infinite;}
+     #contenedoro  div img {width:284px; height:255px;}
+     #contenedoro{margin-top:50px;}
+
+      /************************************************/
+     #contenedoro {
+        width: 1300px; 
+        height: 353px;
+        max-width: 100%;
+    }
+    /*==== contenedor de todos los div de las imagenes ====*/
+    .carruselo {
+        width: 5000px;
+       }
+    /*==== div.. contenedor de cada imagen ==*/
+    .carruselo > div {
+        width: 302px;
+        height: 340px; 
+    }
+      /*******************************************/
+
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+    }
+
+    @media screen and (max-width:768px){
+         
+        #contenedoro  .derecha_flechao {display: none;}
+        #contenedoro  .izquierda_flechao {display: none;}
+        .carrusel2 {animation: movimiento 15s infinite;}
+       #contenedoro  div img {width:284px; height:255px;}
+      /************************************************/
+       #contenedoro {
+          width: 1300px; 
+          height: 353px;
+          max-width: 100%;
+      }
+      /*==== contenedor de todos los div de las imagenes ====*/
+      .carruselo {
+          width: 5000px;
+         }
+      /*==== div.. contenedor de cada imagen ==*/
+      .carruselo > div {
+          width: 302px;
+          height: 340px; 
+      }
+      /*******************************************/
+
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+    }
+@media screen and (max-width:1011px){
+
+         
+        #contenedoro  .derecha_flechao {display: none;}
+        #contenedoro  .izquierda_flechao {display: none;}
+        .carrusel2 {animation: movimiento 15s infinite;}
+         #contenedoro  div img {width:284px; height:255px;}
+      /************************************************/
+         #contenedoro {
+            width: 1300px; 
+            height: 353px;
+            max-width: 100%;
+        }
+        /*==== contenedor de todos los div de las imagenes ====*/
+        .carruselo {
+            width: 5000px;
+           }
+        /*==== div.. contenedor de cada imagen ==*/
+        .carruselo > div {
+            width: 302px;
+            height: 340px; 
+        }
+      /*******************************************/
+
+     @keyframes movimiento{
+        0%{left: 15px;}
+        25%  {left: -200px;}
+        75%  {left: -500px}
+        100% {left: -100px;}
+     }
+    }
+
+  

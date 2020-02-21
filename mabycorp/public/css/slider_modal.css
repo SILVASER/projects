@@ -1,0 +1,166 @@
+/******************************************** slider ofertas ******************************************************/
+
+#contenedor_modal {
+    width: 890px;
+    overflow: hidden;
+    height: 450px;
+    position: relative;
+    margin: 0 auto;
+    cursor: pointer;
+    max-width: 100%;
+    margin-top: -45px;
+    margin-left: 0px;
+}
+/*==== posiciones de las flechas ===*/
+#contenedor_modal  .izquierda_flechaModal {
+    position: absolute;
+    left: 15px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -50px;
+}
+#contenedor_modal  .derecha_flechaModal {
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -50px;
+}
+
+/*==== contenedor de todos los div de las imagenes ====*/
+.carrusel_modal {
+    width:5000px;
+    left: -30px;
+    position: absolute;
+    z-index: 0;
+}
+
+/*==== div.. contenedor de cada imagen ==*/
+.carrusel_modal > div {
+    float: left;
+    width: 840px;
+    height: 450px; 
+    text-align: center;
+    margin:25px;
+    padding: 0px!important;
+
+}
+.carrusel_modal .img_carrusel {
+    cursor: pointer;
+}
+
+
+.carrusel_modal:hover {
+    animation-play-state: paused;
+}
+.carrusel_modal > div  img{
+    transition:transform 1s ease-out;
+
+}
+
+.carrusel_modal > div :hover{
+    transition:transform 1s ease-out;
+    transform: scale(1.05);
+}
+
+/**resoluciones de pantalla*/
+@media screen and (max-width:480px){
+
+    #contenedor_modal  div img {width:280px; height:255px;}
+
+     #contenedor_modal {
+        width: 1000px; 
+        height: 353px;
+        max-width: 100%;
+
+    }
+
+    /*==== div.. contenedor de cada imagen ==*/
+    .carrusel_modal > div {
+        width: 302px;
+        height: 340px; 
+        margin: 2px;
+    }
+
+}
+   
+    @media screen and (max-width:768px){
+    
+      #contenedor_modal  div img {width:284px; height:255px;}
+      /************************************************/
+      #contenedor_modal {
+          width: 1300px; 
+          height: 353px;
+          max-width: 100%;
+      }
+      .carrusel_modal {
+       margin-top: -15px;
+      }
+    /*==== div.. contenedor de cada imagen ==*/
+      .carrusel_modal > div {
+          width: 302px;
+          height: 340px; 
+          margin: 1px;
+      }
+      }
+
+@media screen and (max-width:1024px){
+       
+     #contenedor_modal  div img {width:284px; height:255px;}
+     #contenedor_modal{margin-top:50px;}
+
+      /************************************************/
+     #contenedor_modal {
+        width: 1300px; 
+        height: 353px;
+        max-width: 100%;
+    }
+    /*==== contenedor de todos los div de las imagenes ====*/
+    .carrusel_modal {
+        width: 5000px;
+       }
+    /*==== div.. contenedor de cada imagen ==*/
+    .carrusel_modal > div {
+        width: 302px;
+        height: 340px; 
+        margin: 1px;
+    }
+}
+
+@media screen and (max-width:1011px){
+
+     #contenedor_modal  div img {width:284px; height:255px;}
+      /************************************************/
+     #contenedor_modal {
+        width: 1300px; 
+        height: 353px;
+        max-width: 100%;
+    }
+
+    /*==== div.. contenedor de cada imagen ==*/
+    .carruselo_modal > div {
+        width: 302px;
+        height: 340px; 
+        margin: 1px;
+    }
+     
+    }
+
+    @media screen and (max-width:987px){
+
+         #contenedor-modal  div img {width:284px; height:255px;}
+      /************************************************/
+         #contenedor-modal {
+            width: 1300px; 
+            height: 353px;
+            max-width: 100%;
+        }
+
+        /*==== div.. contenedor de cada imagen ==*/
+        .carrusel-modal > div {
+            width: 302px;
+            height: 340px; 
+            margin: 1px;
+        }
+     
+    }

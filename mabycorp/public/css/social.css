@@ -1,0 +1,123 @@
+.social{
+    position: fixed;
+    left:0;
+    top:195px;
+    z-index:0;
+}
+.social ul {
+    list-style:none;
+}
+.social ul li a{
+    display:inline-block;
+    /*color:#fff;
+    background:#000;*/
+    padding:2px 4px;
+    text-decoration:none;
+    transition:all 500ms ease;
+    /*-webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease;*/
+           border-radius: 50%;
+
+}
+.social ul li  #a1{background:#4267B2;}
+.social ul li  #a2{background:#55acee;}
+.social ul li  #a3{background:#cd201f;}
+
+.social ul li .facebook{background:#4267B2;}
+.social ul li .twitter{background:#55acee;}
+.social ul li .youtube{background:#cd201f;}
+.social ul li #a1:hover {
+    padding: 3px 23px;
+    background: #4267B2;
+               border-radius: 8px;
+
+}
+.social ul li #a2:hover {
+    padding: 3px 23px;
+    background: #55acee;
+               border-radius: 8px;
+
+}
+.social ul li #a3:hover {
+    padding: 3px 23px;
+    background: #cd201f;
+               border-radius: 8px;
+
+}
+/******************************* boton_coment *****************************************************/
+
+.boton_coment{
+    position: fixed;
+    right:0;
+    top:250px;
+    z-index:1;
+}
+.boton_coment ul {
+    list-style:none;
+}
+.boton_coment ul li a{
+    display:inline-block;
+     color:#fff;
+    padding:2px 4px;
+    text-decoration:none;
+    transition:all 500ms ease;
+    border-radius: 0 15% 10% 0;
+}
+.boton_coment ul {
+    list-style:none;
+}
+.boton_coment ul li a{
+    display:inline-block;
+    padding:2px 4px;
+    text-decoration:none;
+    transition:all 500ms ease;
+    border-radius: 0 15% 10% 0;
+}
+.boton_coment ul li #coment:hover {
+    padding: 3px 23px;
+    cursor: pointer;
+}
+  /*
+           .sr div {
+                float: right;
+                margin: -5px;
+                margin-top: -45px;
+            }
+
+           
+
+             .sr .t2:hover{
+               opacity: 0.40;
+                background: #00abf0;
+            }
+
+             .sr .y3:hover{
+               opacity: 0.40;
+                background: #cd201f;
+            }
+
+             .sr .t2{
+                 width: 40px;
+                 height: 40px;
+                 border-radius: 50%;
+                 background: #00abf0;
+                 box-shadow: 2px 2px 5px; 
+            }
+
+             .sr .y1{
+                width: 40px;
+                 height: 40px;
+                 border-radius: 50%;
+                 background: #cd201f;
+                 box-shadow: 2px 2px 5px; 
+            }
+
+             .sr .f1{
+                width: 40px;
+                 height: 40px;
+                 border-radius: 50%;
+                 background: blue;
+                 box-shadow: 2px 2px 5px; 
+            }
+*/

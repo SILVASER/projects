@@ -1,0 +1,542 @@
+/*===== contenedor generar =====*/
+#contenedor_principal>.container2{margin-top: -360px!important;}
+
+#contenedorSNACK {
+    width: 1135px;
+    overflow: hidden;
+    height: 150px;
+    position: relative;
+    margin: 0 auto;
+    cursor: pointer;
+
+    max-width: 100%;
+
+
+    }
+/*==== posiciones de las flechas ===*/
+#contenedorSNACK  .izquierda_flecha {
+    position: absolute;
+    left: 10px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -50px;
+}
+#contenedorSNACK  .derecha_flecha {
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -50px;
+}
+/*==== contenedor de todos los div de las imagenes ====*/
+.carruselSNACK {
+    width: 4000px;
+    left: 0px;
+    position: absolute;
+    z-index: 0;
+    animation: movimiento 15s infinite;
+}
+
+@keyframes movimiento{
+    0%{left: 1px;}
+    25%  {left: -150px;}
+    50%  {left: -180px}
+    100% {left:-50px;}
+	   /* 0%{left: 7px;}
+    /* 28%  {left: -128px;}*/
+   /* 50%  {left: -97px;}
+    100% {left: 50px;}*/
+
+}
+
+
+/*==== div.. contenedor de cada imagen ==*/
+.carruselSNACK > div {
+    float: left;
+   /* width: 185px;
+    height: 120px; */
+	width: 150px;
+    height: 100px;
+    text-align: center;
+    margin:11px;
+}
+.carruselSNACK .img_carrusel {
+    cursor: pointer;
+}
+
+/*====== ajustar medida a telefono====*/
+@media screen and (max-width: 320px){
+
+    #carruselSNACK{
+        width: 100%!important;
+    }
+}
+
+.carruselSNACK:hover {
+    animation-play-state: paused;
+}
+.carruselSNACK > div  img{
+    transition:transform 1s ease-out;
+    /*    display:block!important;
+        -webkit-transition:-webkit-transform 1s ease-out;
+        -moz-transition:-moz-transform 1s ease-out;
+        -o-transition:-o-transform 1s ease-out;
+        -ms-transition:-ms-transform 1s ease-out;*/
+}
+
+.carruselSNACK > div :hover{
+    transition:transform 1s ease-out;
+    transform: scale(1.2);
+    /* -moz-transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+     -o-transform: scale(1.1);
+     -ms-transform: scale(1.1);      */
+}
+
+
+/************************************* menu principal********************************************************/
+*{
+	margin:0px;
+	padding:0px;
+}
+.menuprincipal{
+	margin:30px 0px 6px auto;
+	
+	position: relative;
+	z-index: 1;
+		
+}
+/*========= ancho del menu principal ================*/
+.menuprincipal >ul{
+	width: 1230px;
+	margin:0px auto;	
+	background: #2951B2;
+
+}
+
+.menuprincipal >ul>li>a{
+	text-decoration:none;
+	padding:17px!important;
+	display:block;
+	color: #FFFFFF;
+	border:0px solid #0069A6!important;
+
+	font-size: 16.5px!important;
+    font-weight: 200;
+    font-family: Segoe UI Light, Segoe UI, Segoe, Tahoma, Helvetica, Arial, sans-serif;
+}
+ .menuprincipal>ul>li .children a span{
+ 	float: right;
+		position: relative;
+		top:2px;
+		margin-right: 0;
+		margin-left:10px;
+ }
+
+/*SUPERIOR,DERECHA,INFERIOR,INZQUIERDA*/
+
+/*========== menu con efecto de transiciòn =============*/
+.menux-fixed{
+	position: fixed;
+	top: -30px;
+	z-index: 1000!important;
+	width: 100%;	
+	background:#0069A6;
+	box-shadow: 0px 2px 1px;
+}
+
+.menux-fixed>ul>li>a{
+padding: 10px 16px!important;
+/*padding: 13px 17px!important;*/
+transition: all ease .8s;
+}
+/*===== --- ///  --- ======*/
+
+.menu_ofertas{margin-top:220px!important;}
+
+/************************************ submenu ********************************************************************/
+.menuprincipal  ul li{
+	display:inline-block;
+	position: relative;
+
+}
+.menuprincipal >ul>li>ul{
+	position:absolute;
+}
+/*************** sub menu*********************/
+.menuprincipal >ul>li>ul{
+	display:none;
+	width: 100%;
+}
+.menuprincipal >ul>li a{
+	text-decoration:none;
+	padding:7px 19px;
+	display:block;
+	color: #fff;
+ border-bottom:1px solid #ccc;
+	font-size: 15px;
+    font-weight: 200;
+    font-family: Segoe UI Light, Segoe UI, Segoe, Tahoma, Helvetica, Arial, sans-serif;
+}
+
+.menuprincipal>ul>li>ul>li>ul{
+ border: 1px solid #fff;
+}
+/********************************************/
+.menuprincipal >ul>li a ul li a{
+	/**text-decoration:none;
+	padding:18px;
+	display:block;
+	color: #fff;
+
+
+	font-size: 11px!important;
+    font-weight: 200;
+    font-family: "Segoe UI Light", "Segoe UI", Segoe, Tahoma, Helvetica, Arial, sans-serif;*/
+	}
+/**************** hover para que salga el submenu *********************/
+.menuprincipal >ul>li:hover>ul{
+	display:block;
+		background:#4282bc;
+}
+.menuprincipal >ul>li>ul{
+	
+transition: all ease .4s;
+
+}
+/*************** hover general de todo el menu *********************/
+.menuprincipal  ul li:hover{		border-radius:7px 6px 6px 7px;
+
+	background: #cc3333;
+
+	transition:all .3s ease;
+
+}
+
+.menuprincipal>ul>li>ul>li{
+	display: block;
+}
+/****************** sub menu tercer menu ************************/
+.menuprincipal ul li ul li ul{
+	display:block;
+	margin-left:100%;
+	margin-top:-36px;
+	position: absolute;
+	width: 300%;
+}
+
+.menuprincipal ul li ul li ul li{
+	float: left;
+	width:200px;
+	
+}
+.menuprincipal ul li ul li ul li a{
+	
+	border:0px solid ;
+	padding:  15px 0px 10px 30px;
+	margin-left: -4%;
+	
+
+	font-size: 15px!important;
+    font-weight: 200;
+    font-family: "Segoe UI Light", "Segoe UI", Segoe, Tahoma, Helvetica, Arial, sans-serif;
+}
+
+
+.menuprincipal ul li ul li ul{
+	display:none;
+}
+.menuprincipal ul li ul li ul li{
+	display:block;
+}
+/**************** hover para que salga el Sub submenu 3 *********************/
+
+.menuprincipal ul li ul li:hover ul{
+	display:block;
+	background:#4282bc;		
+
+
+}
+/***************************************************/
+.menuprincipal ul li ul li .imagenes{
+	margin-left:127px;
+}
+/*****************resoluciones de pantalla*********/
+@media screen and (max-width:320px){
+		#navegacionz{
+			display: none;
+		}
+	
+
+	}
+	@media screen and (max-width:480px){
+		#navegacionz{
+			display: none;
+		}
+		
+		.cabecera>div .años{margin.top:80px!important;}
+
+	}
+	@media screen and (max-width:768px){
+		#navegacionz{
+			display: none;
+		}
+
+	}
+	@media screen and (max-width:1024px){
+		#navegacionz{
+			display: none;
+		}
+	}
+	
+/**********************************************************************************************************/
+	
+footer div>div>div>p .footer{
+	color: #fff;
+
+	font-size: 15px;
+    font-weight: 200;
+    font-family: "Segoe UI Light", "Segoe UI", Segoe, Tahoma, Helvetica, Arial, sans-serif;
+}
+
+/*************************************  CABECERA   **************************************************************/
+           .sup div {
+                float: left;
+                margin-top:0px;
+            }
+            .sup .circulo1{
+              max-width: 200px;
+                 height: 59px;
+                  margin: 3px 40px 0 0;
+            }
+             .sup .circulo2{
+                 max-width: 400px;
+                 height: 20px;
+                 padding:27px 20px 0 0;
+                  margin: 0 3px 0 0px;
+
+            }
+             .sup .circulo3{
+                 max-width: 400px;
+                 height:59px;
+                 padding:16px 0 0 0;
+                margin: 0 30px 0 0;
+            }
+               .sup .circulo4{
+                    max-width: 250px;
+                 height: 59px;
+                  padding:2px 5px 0 0;
+                  margin: 0 0 0 0;
+            }
+			.sup .circulo5{
+                margin-top: -40px;
+                margin-left: 835px;
+            }
+
+	      @media screen and (max-width:1200px){
+				      .sup .circulo2{max-width: 240px;padding:27px 0px 0 0;}
+				       .sup .circulo1{
+             
+                   max-width: 200px;
+                 height: 59px;
+                  margin: 3px 30px 0 0;
+            }
+            .sup .circulo5{
+            	margin-left: 910px;
+            }
+}
+
+		    @media screen and (max-width:1024px){
+		      #contenedor_principal>div .contenedor_slider{margin-top: 40px!important;}
+
+		     	.social{display: none}
+
+		      	.sup .circulo1{display: none;}
+		      	.sup .circulo2{display: none;}
+		      	
+
+		      	header>.circuloheader{display: block!important;}
+
+		      	.sup{margin-top: 101px;}
+		      }
+/*****************************124***********************************************************************************/
+	@media screen and (max-width:1170px){
+			.menu-fixed{margin-left: 3%;}
+		      }
+
+	@media screen and (max-width:1192px){
+			.menu-fixed{margin-left: 3%;}   
+	}
+	
+	@media screen and (max-width:492px){
+		     #contenedor_principal>div .contenedor_slider{margin-top: 50px!important;height: 180px;}
+		     #contenedor_principal>div .contenedor_slider .carousel-inner img{height: 210px;}
+
+			
+		      	.sup .circulo4{margin-top:0px!important;margin-left: 18.5%;}
+		      	.sup .circulo3{display: none;}
+		      	.sup .circulo1{display: none;}
+
+		}
+		    
+		      
+	
+
+	@media screen and (max-width:768px){
+			
+		     #contenedor_principal>div .contenedor_slider{margin-top: 50px!important;}
+
+
+		      	.sup .circulo4{margin-top: -10px;margin-left: 15%;}
+		      	.sup .circulo3{display: none;}
+		      	.sup .circulo1{display: none;}
+
+	}
+
+
+	/************************************** snack**************************************************************/
+
+/*#contenedor_principal .container .row .galeria_snack  a img:hover{transform: scale(1.05);}
+#contenedor_principal .container2 div div  a :hover{transform: scale(1.03); box-shadow: 10px 5px 5px #2e821f;}
+#contenedor_principal .container2 div div  a img{transition: 1s;box-shadow: 60px -10px #0069a6;border:1px solid #CCC;}
+#contenedor_principal .container2 div div  a img{transition: 1s;box-shadow: 60px -500px #0069a6;border:1px solid #CCC;}*/
+
+
+#contenedor_principal .container2 div div  a :hover{transform: scale(1.03); box-shadow: 10px 5px 5px #F3FAFD;box-shadow: #D61411 5px 3px;}
+#contenedor_principal .container2 div div  a img{transition: 1s;box-shadow: -150px 5px #0069A6;border:1px solid #CCC;}
+#contenedor_principal h4{
+			color:#D61411;
+			font-size: 20px;
+			
+			padding-top: 7px 0px 7px -5px;font-family:gilroy-bold;transition: 1s;} 
+
+
+			  @media screen and (max-width:1024px){#contenedor_principal h4{
+			color:#D61411;
+			font-size: 14px;
+			
+			padding-top: 7px 0px 7px -5px;font-family:gilroy-bold;transition: 1s;}
+			#contenedor_principal .container2 h2{margin-top: 80px!important;}
+			#contenedor_principal .breadcrumb {margin-top:50px!important;}
+			 }
+
+			  @media screen and (max-width:480px){
+
+#contenedor_principal h4{
+			color:#D61411;
+			font-size: 12x;
+			
+			padding-top: 4px 0px 4px -3px;font-family:gilroy-bold;transition: 1s;} 
+			  }
+
+
+/*************** ofertas ***************/
+.slider_ofertas{
+height: 70vh;
+
+}
+.slider_ofertas2{
+margin-top:0px;
+}
+         	@media screen and (max-width:320px){
+
+		      	    #contenedor_principal{margin-top: 30px!important;}
+		      	    /* #contenedor_principal>.container2{margin-top: -90px!important;}*/
+
+}
+
+     	@media screen and (max-width:480px){
+		      	    #contenedor_principal{margin-top: 30px!important;}
+
+		      	    #contenedor_principal>.slider_ofertas2{margin-top: 0px!important;}
+				      	     #contenedor_principal>.container3 h3{margin-left: 11%!important;}		      	    
+
+				      	   /* #contenedor_principal>.container2{margin-top: -80px!important;}*/
+
+}
+
+
+
+	@media screen and (max-width:768px){
+				      	    #contenedor_principal>.slider_ofertas2{margin-top: 0px!important;}
+				      	    				      	  /*  #contenedor_principal>.container2{margin-top: -80px!important;}
+*/
+
+		      	    #contenedor_principal{margin-top: 30px!important;}
+
+	}
+	@media screen and (max-width:1024px){
+				      	    #contenedor_principal>.slider_ofertas2{margin-top: -60px!important;}
+				      	    #contenedor_principal>.slider_ofertas2>.container{margin-top: -500px!important;}
+				      	    #contenedor_principal>.container2{margin-top: -100px!important;}
+				      	     #contenedor_principal>.containerL{margin-top: 60px!important;}
+				      	     #contenedor_principal>.container3{margin-top: 60px!important;}		      	    
+				      	     #contenedor_principal>.container3 h3{font-size: 20px!important;}		      	    
+				      	     #contenedor_principal>.container3 h3 img{width: 50px!important;}		      	    
+				    		      	    
+				      	     #contenedor_principal{margin-top: 30px!important;}
+
+
+}
+
+/********************************************LAVA VAJILLAS***************************************************************/
+#contenedor_principal .lava_vajillas p small{font-size:14px;}
+#contenedor_principal .lava_vajillas .thumbnail{height: 250px;}
+#contenedor_principal .lava_vajillas .thumbnail:hover{transform: scale(1.04);transition: all ease .3s;box-shadow: #167cb7 5px 3px;}
+.imagen1 {
+      border-bottom: #167cb7 1px solid ; 
+
+}
+#contenedor_principal .lava_vajillas .thumbnail {border:1px solid #167cb7;}
+
+@media screen and (max-width:320px){
+/*#contenedor_principal .lava_vajillas .thumbnail{height: 10px;}*/
+#contenedor_principal .lava_vajillas p small{font-size:11px;font-family: arial;}
+#contenedor_principal .lava_vajillas .thumbnail{height: 200px;}
+
+
+
+}
+
+     	@media screen and (max-width:480px){
+
+		#contenedor_principal .lava_vajillas .thumbnail{height: 250px!important;}
+		#contenedor_principal .containerL h2{
+	font-size:15px!important;
+}
+#contenedor_principal .containerL h2>img{
+	width: 40px!important;
+	height: 50px!important;
+ }
+
+
+
+
+
+	@media screen and (max-width:1024px){
+		#contenedor_principal .lava_vajillas .thumbnail{height: 370px;}
+
+}
+
+
+/******************************responsivo titulos slider*************************************************/
+@media screen and (max-width:480px){
+	#contenedor_principal .container h2{
+	font-size:15px!important;
+ }
+#contenedor_principal .container h2 img{
+	width: 40px!important;
+	height: 50px!important;
+ }
+   
+}
+@media screen and (max-width:1024px){
+	#contenedor_principal .container h2{
+	font-size:25px;
+ }
+
+   
+}
+
+/**********************caritas pintadas***************************************/
+#contenedor_principal .container div div div div div a img:hover{transform: scale(1.03); box-shadow: 10px 5px 5px #F3FAFD;box-shadow: #D61411 5px 3px;}
