@@ -1,0 +1,80 @@
+body, html {
+    height: 100%;
+    background: linear-gradient(rgb(50, 23, 50), rgb(01, 11, 10));
+    /* background: linear-gradient(rgb(109, 130, 122), rgb(09, 77, 23));*/
+    /*background-image: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33)); */
+}
+
+.contenedor { max-width: 330px; padding: 40px 40px;}
+
+.btn {font-weight: 700;height: 36px; cursor: default;}
+
+.contenedor {
+    background-color: #F7F7F7;
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.imagen {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px;
+    display: block;
+    border-radius: 70%;
+}
+.titulo1 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 0;
+    min-height: 1em;
+}
+
+.titulo2 {
+    display: block;
+    color: #404040;
+    line-height: 2;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.formulario #user,
+.formulario #password {
+    height: 44px;
+    font-size: 16px;
+}
+
+.formulario input[type=text],
+.formulario input[type=password],
+.formulario button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.formulario .form-control:focus {border-color: rgb(104, 145, 162);}
+
+.btn.boton {
+    background-color: rgb(104, 145, 162);
+    padding: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    height: 36px;
+    border-radius: 3px;
+    border: none;
+}
+
+.btn.boton:hover,
+.btn.boton:active,
+.btn.boton:focus {
+    background-color: rgb(12, 97, 33);
+}

@@ -1,0 +1,323 @@
+body{background-color: #ffffff}
+
+fieldset.scheduler-border{
+    border: 1px groove black;
+    /*SUPERIOR,DERECHA,INFERIOR,INZQUIERDA*/
+    /*    padding: 0 0 1.4em 1em;
+        margin: 2em 235px 1.5em 235px;
+    */
+    padding: 0 0 1.4em 1em;
+    margin: 1em 100px 1.5em 100px;
+    height: 700px;
+    box-shadow:  0px 0px 0px 0px #000;
+}
+legend.scheduler-border {
+    width:inherit; /* Or auto */
+    /*padding:0 10px;  Para dar un poco de relleno a la izquierda y a la derecha*/
+    padding:0 5px; /* Para dar un poco de relleno a la izquierda y a la derecha*/
+    border-bottom:none;
+    font: 140% sans-serif;
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+ /*SUPERIOR,DERECHA,INFERIOR,INZQUIERDA*/
+    fieldset.scheduler-border{
+        border: 2px groove black !important;
+        padding: 3px 20px 5em 20px!important;
+        margin: 35px 0 0 0 !important;
+        box-shadow:  0px 0px 0px 0px #000;
+
+    }
+    legend.scheduler-border {
+        width:inherit;  
+        padding:0 10px;  
+        border-bottom:none;
+        font: 140% sans-serif;
+    }
+
+
+
+
+}
+
+/*************************************************************************/
+
+fieldset.scheduler-border2{
+    border: 1px groove black;
+    /*SUPERIOR,DERECHA,INFERIOR,INZQUIERDA*/
+    padding: 5px 0 0 0;
+    margin: 2em 130px 1.5em 100px;
+    height:240px;
+    box-shadow:  0px 0px 0px 0px #000;
+}
+legend.scheduler-border2 {
+    width:inherit; /* Or auto */
+    padding:0 5px;  /*Para dar un poco de relleno a la izquierda y a la derecha*/
+    border-bottom:none;
+    font: 100% sans-serif;
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+    /*SUPERIOR,DERECHA,INFERIOR,INZQUIERDA*/
+    fieldset.scheduler-border2{
+        border: 2px groove black !important;
+
+        padding: 1px 7px 1em 7px!important;
+        margin: 0 0 1.5em 0 !important;
+        margin: 60px 0 15px 0 !important;
+        box-shadow:  0px 0px 0px 0px #000;
+        height: 450px;
+    }
+    legend.scheduler-border2 {
+        width:inherit;  
+        padding:0 10px;  
+        border-bottom:none;
+        font: 100% sans-serif!important;
+    }
+    /*************************************************/
+    .widget p{
+        display: inline-block;
+        line-height: 0.5em;
+        color:#ffffff;
+    }
+    .widget p{
+        margin-left: 5px;
+    }
+    .fecha{
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        font-size: 1.4em!important;
+        margin-bottom: 0.125rem;
+        /*margin-bottom:5px;*/
+        background: rgba(64, 126, 0, 1);
+        padding: 1px!important;
+        width: 220px!important;
+    }
+
+    .reloj{
+        font-family: 'Oswald', sans-serif;
+        width: 220px!important;
+        padding: 1px!important;
+        font-size: 4em!important;
+        text-align: center;
+        background: rgba(64, 126, 0, 1);
+    }
+
+    .reloj .caja-segundos{
+        display: inline-block;
+    }
+
+    .reloj .segundos,
+    .reloj .ampm{
+        font-size: 1rem!important;
+        display: block;
+    }
+
+}
+
+#letra{font-size: 19px;}
+/***************************************************************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.widget p{
+    display: inline-block;
+    line-height: 1em;
+    color:#ffffff;
+}
+.fecha{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0.125rem;
+    /*margin-bottom:5px;*/
+    background: rgba(64, 126, 0, 1);
+    padding: 7px;
+    width: 290px;
+}
+
+.reloj{
+    font-family: 'Oswald', sans-serif;
+    width: 290px;
+    padding: 7px;
+    font-size: 5em;
+    text-align: center;
+    background: rgba(64, 126, 0, 1);
+}
+.reloj .caja-segundos{
+    display: inline-block;
+}
+
+.reloj .segundos,
+.reloj .ampm{
+    font-size: 2rem;
+    display: block;
+}
+/*************************responsive****************************************/
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    #panelControl{
+        margin-top: -20px;
+    }
+
+    #panelControl a{
+        padding: 8px;
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    .btn:hover {
+        background-color: #148F93;
+    }
+    .btn{
+        /*// background-color: rgb(104, 145, 162);*/
+        padding: 0px;
+        font-weight: 700;
+        border-radius: 3px;
+        border: none;
+    }
+
+    div form div div .btnBuscar{margin: 10px 10px 40px 10px!important;margin-top: 70px!important;}
+    .btnBuscarPersonal{width: 100%;margin: 10px!important;height: 45px!important;
+}
+   
+   .btnBuscar1{margin-top: -210px!important;}
+   /* .btnBuscar2{margin-top: -50px!important;}*/
+
+    .btnB2{padding: 5px; width:35px;}
+    #fecha1{margin: 10px!important; }
+    #fecha2{margin: 10px!important; }
+    .b{
+        padding:8px!important;
+        width: 100%!important;
+        display: block!important;
+        margin-bottom: 10px!important;
+        position: relative!important;
+        margin-left: 10px!important;
+        /*margin-top: -65px;*/
+
+    }
+    #btnImprimir{ height: 40px!important;}
+
+    .btnB{padding: 9px;}
+   .btnEliminar{ padding: 9px!important;}
+   .btnEditar{ padding: 9px!important;}
+
+}
+
+/**************************************************/
+fieldset.scheduler-border3{
+    border: 1px groove black;
+    /*SUPERIOR,DERECHA,INFERIOR,INZQUIERDA*/
+    padding: 5px 0 0 0;
+    margin: 2em 130px 1.5em 100px;
+    height:240px;
+    box-shadow:  0px 0px 0px 0px #000;
+    height: 500px;
+}
+legend.scheduler-border3 {
+    width:inherit; /* Or auto */
+    padding:0 5px;  /*Para dar un poco de relleno a la izquierda y a la derecha*/
+    border-bottom:none;
+    font: 100% sans-serif;
+}
+
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    fieldset.scheduler-border3{
+        border: 2px groove black !important;
+        padding: 3px 20px 5em 20px!important;
+        margin: 35px 0 15px 0 !important;
+        box-shadow:  0px 0px 0px 0px #000;
+       height: 1150px;
+
+    }
+    legend.scheduler-border3 {
+        width:inherit;  
+        padding:0 10px;  
+        border-bottom:none;
+        font: 140% sans-serif;
+    }
+
+
+
+
+}
+/**************tabla***********/
+
+ /*th { background:#82B440; color :#FFFFFF;}*/
+            
+            /*table {
+                border-collapse: collapse;
+                border: 1px solid #cdcdcd;
+                font: normal 12px arial; 
+                width: 100%;
+               
+            }
+            td,th { border: 1px solid #cdcdcd;}*/
+            
+
+  @media only screen and (max-width: 760px),
+            (min-device-width: 768px) and (max-device-width: 1024px)  {
+/*SUPERIOR,DERECHA,INFERIOR,INZQUIERDA*/
+                 td,th {  padding: 7px 0px 0px 140px!important;}
+                /* Section three*/
+                table, thead, tbody, th, td, tr { 
+                    display: block; 
+                }
+                /* Section four*/
+                thead tr { 
+                    position: absolute;
+                    top: -9999px;
+                    left: -9999px;
+                }
+
+                tr { border-bottom: 2px solid #82B440;}
+                /* Section five*/
+                td { 
+                    border: none;
+                    border-bottom: 1px solid #eee; 
+                    position: relative;
+                    padding-left: 50%; 
+                    margin-left: 0px;
+
+                }
+                td:before { 
+                    position: absolute;
+                    top: 3px;
+                    left: 6px;
+                    width: 45%; 
+                    padding-right: 10px; 
+                    white-space: nowrap;
+                    font-weight: bold;
+                    color: #0E9893;
+                }
+
+                
+                /* Section six*/
+     
+   
+ 
+
+                td:nth-of-type(1):before { content: "TIPO DÍA"; }
+                td:nth-of-type(2):before { content: "DOC. IDENTIDAD"; }
+                td:nth-of-type(3):before { content: "NOMBRE"; }
+                td:nth-of-type(4):before { content: "ESTADO"; }
+                td:nth-of-type(5):before { content: "FECHA ACTIVIDAD"; }
+                td:nth-of-type(6):before { content: "HORA INGRESO"; }
+                td:nth-of-type(7):before { content: "HORA SALIDA"; }
+
+            }
+
+            /******************************************************************************************/
